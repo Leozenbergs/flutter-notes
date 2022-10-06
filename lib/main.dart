@@ -15,8 +15,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Notes',
       theme: ThemeData(
+        brightness: Brightness.light,
         primarySwatch: Colors.orange,
+        /* light theme settings */
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.orange,
+        /* dark theme settings */
+      ),
+      themeMode: ThemeMode.light,
       home: const Notes(title: 'Create and edit your notes'),
     );
   }
